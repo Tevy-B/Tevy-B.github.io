@@ -46,18 +46,45 @@
 		<!-- Main -->
 		<div id="main">
 
-			<!-- <span class="date"><span id="date"></span>
-				<script>var dt = new Date();
-					document.getElementById("date").innerHTML = dt.toLocaleString();</script> -->
+			<!-- <span class="date"><span id="date"></span> -->
+
+			<center><span class="date" , id="date"></span></center>
+
+			<script type="text/javascript">
+				// These local date and time script are functional
+				// var dt = new Date();
+				// document.getElementById("date").innerHTML = dt.toLocaleString();
+
+				// var today = new Date();
+				// var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+				// var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+				// var dateTime = date + ' ' + time;
+				// document.getElementById("date").innerHTML = dateTime;
+
+				var today = new Date();
+				var day = today.getDay();
+				var month = today.getMonth();
+				var daylist = ["Sunday", "Monday", "Tuesday", "Wednesday ", "Thursday", "Friday", "Saturday"];
+				var monthlist = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+				// var date = today.getFullYear() + ',' + (today.getMonth() + 1) + ',' + today.getDate();
+				var date = today.getDate() + ', ' + monthlist[month] + ', ' + today.getFullYear();
+				var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+				var dateWOTime = daylist[day] + ", " + date + ' ';
+				document.getElementById("date").innerHTML = dateWOTime;
+			</script>
+
+
 
 			<!-- Post -->
 			<section class="post">
 				<header class="major">
 
-					<span class="date">January 28, 2022</span>
+					<!-- <span class="date">January 28, 2022</span> -->
+
 					<h1>My Work Experiences<br />
 						and Projects</h1>
-					<p>Here are my highlighted experiences that I have gained inside and outside the classrooms. Aside
+					<p>Here are my highlighted experiences that I have gained inside and outside the classrooms.
+						Aside
 						from my
 						courses' assignments, I enjoy getting my hands dirty with side projects and learning about
 						applications, which aren't covered in class.
@@ -110,12 +137,15 @@
 						<li>Built applications to automate disassembly and assembly tasks with <b>Tulip</b> and
 							<b>Asana</b> for manufacturing equipment
 						</li>
-						<li>Developed a mobile application for a massive ~2300 parts pill producer disassembly build-out
+						<li>Developed a mobile application for a massive ~2500 parts pill producer disassembly
+							build-out
 						</li>
-						<li>Designed user interface and added procedural content from <b>QDocs</b> to optimize UI/UX and
+						<li>Designed user interface and added procedural content from <b>QDocs</b> to optimize UI/UX
+							and
 							support
 							on-site operators</li>
-						<li>Coordinated a project interfacing <b>Tulip</b> and <b>OSI PI</b> using <b>RESTful API</b>,
+						<li>Coordinated a project interfacing <b>Tulip</b> and <b>OSI PI</b> using <b>RESTful
+								API</b>,
 							and <b>PI Asset Framework</b>
 							Server</li>
 					</ul>
@@ -142,10 +172,18 @@
 							probability and
 							cumulative distribution
 							functions</li>
+
 					</ul>
 					<!-- add the Nist Surface texture image that I helped produced with Dr. Jason Fox -->
 					<a href="#" class="image main"><img src="images\NIST surface texture.jpg" alt="" /></a>
 
+					<ul class="actions special">
+						<li>
+							<a href="https://youtu.be/Tb7yzo9q5KU" class="button small">Mid-Internship Presentation
+								Video</a>
+						</li>
+					</ul>
+					<br>
 					<h3 style="float: left">Library of Congress</h3>
 					<h3 style="float: right">Aug. 2019 - Jan. 2020
 					</h3>
@@ -186,7 +224,8 @@
 						</li>
 						<li>Produced advance visualizations and analytics for 75K data points between 2011 and 2020
 						</li>
-						<li>Utilized a custom shape and text file to build a hexagon tiled map for complaints by states
+						<li>Utilized a custom shape and text file to build a hexagon tiled map for complaints by
+							states
 						</li>
 						<ul class="actions special">
 							<li>
@@ -307,9 +346,11 @@
 						<div style="clear: both;">
 						</div>
 						<ul>
-							<li>Generate an email with the following syntax: firstname.lastname@department.company.com
+							<li>Generate an email with the following syntax:
+								firstname.lastname@department.company.com
 							</li>
-							<li>Create a random String for the password, set mailbox capacity, and store the employee’s
+							<li>Create a random String for the password, set mailbox capacity, and store the
+								employee’s
 								alternate email address</li>
 						</ul>
 
@@ -322,7 +363,8 @@
 						<div style="clear: both;">
 						</div>
 						<ul>
-							<li>Develop tree prediction and linear regression prediction models to predict stock trends
+							<li>Develop tree prediction and linear regression prediction models to predict stock
+								trends
 							</li>
 							<li>Visualize each model with comparison to the existing trend to test the algorithm’s
 								accuracy
