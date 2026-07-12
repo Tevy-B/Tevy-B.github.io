@@ -226,3 +226,27 @@ button,
   color: #0f172a;
   border-color: transparent;
 }
+
+/* Variable-driven overrides to centralize grey/contrast tokens */
+:root {
+  --text: #cbd5e1;
+  --heading: #f8fafc;
+  --code: #e2e8f0;
+  --muted: #94a3b8;
+  --muted-2: #64748b;
+  --accent: #f59e0b;
+}
+
+body { color: var(--text); }
+#intro h1 { color: var(--heading); }
+#intro p { color: var(--text); }
+#nav ul.links li a { color: var(--text); }
+#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 { color: var(--heading); }
+#main p, #main li, #main .date, #main pre, #main blockquote { color: var(--text); }
+blockquote { color: var(--heading); }
+a { color: var(--text); }
+a:hover { color: var(--accent); }
+#footer { color: var(--muted); }
+#footer a { color: var(--text); }
+#footer .field label { color: var(--muted); }
+#copyright { color: var(--muted-2); }
