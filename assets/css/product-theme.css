@@ -1,0 +1,228 @@
+/* Product Management theme overrides */
+body {
+  background-image:
+    radial-gradient(circle at top left, rgba(96, 165, 250, 0.16), transparent 22%),
+    radial-gradient(circle at bottom right, rgba(234, 179, 8, 0.14), transparent 18%),
+    linear-gradient(180deg, #0f172a 0%, #111827 100%);
+  color: #cbd5e1;
+}
+
+body, input, select, textarea {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+#wrapper {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.92), rgba(15, 23, 42, 0.98));
+}
+
+#intro {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.96), rgba(15, 23, 42, 0.92));
+  min-height: calc(100vh - 6rem);
+  padding: 6rem 4rem 5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+#intro h1 {
+  color: #f8fafc;
+  font-size: 4.75rem;
+  letter-spacing: -0.06em;
+  line-height: 1.05;
+  max-width: 12ch;
+}
+
+#intro p {
+  color: #cbd5e1;
+  font-size: 1.25rem;
+  max-width: 42rem;
+  margin-bottom: 2rem;
+}
+
+#intro .actions {
+  margin-top: 2.5rem;
+}
+
+#intro .button {
+  background: #f59e0b;
+  color: #0f172a;
+  border: none;
+  box-shadow: 0 24px 45px -25px rgba(245, 158, 11, 0.9);
+  padding: 1rem 2rem;
+}
+
+#intro .button:hover {
+  background: #d97706;
+  color: #fff;
+}
+
+#header {
+  background: transparent;
+  padding-top: 1rem;
+}
+
+#header .logo {
+  border-color: rgba(245, 158, 11, 0.9);
+  color: #f8fafc;
+  background: rgba(15, 23, 42, 0.25);
+  border-radius: 2rem;
+  box-shadow: 0 18px 35px -20px rgba(15, 23, 42, 0.7);
+}
+
+#nav {
+  background: rgba(15, 23, 42, 0.82);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  box-shadow: 0 24px 80px -40px rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+#nav ul.links li a {
+  color: #cbd5e1;
+}
+
+#nav ul.links li.active,
+#nav ul.links li a:hover {
+  background: rgba(245, 158, 11, 0.12);
+}
+
+#nav ul.links li.active a {
+  color: #f8fafc;
+}
+
+#main {
+  width: calc(100% - 4rem);
+  background: transparent;
+  box-shadow: none;
+}
+
+#main > * {
+  background: rgba(15, 23, 42, 0.92);
+  border-color: rgba(148, 163, 184, 0.15);
+  border-radius: 2rem;
+  box-shadow: 0 30px 80px -60px rgba(15, 23, 42, 0.8);
+}
+
+#main > .post {
+  padding: 5rem;
+  border: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+#main > .post.featured {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#main h1,
+#main h2,
+#main h3,
+#main h4,
+#main h5,
+#main h6 {
+  color: #f8fafc;
+}
+
+#main p,
+#main li,
+#main .date,
+#main pre,
+#main blockquote {
+  color: #cbd5e1;
+}
+
+#main pre {
+  background: rgba(15, 23, 42, 0.95);
+  border-color: rgba(148, 163, 184, 0.15);
+}
+
+#main pre code {
+  color: #e2e8f0;
+}
+
+#main .posts > * {
+  background: rgba(15, 23, 42, 0.9);
+  border-color: rgba(148, 163, 184, 0.1);
+  border-radius: 1.75rem;
+}
+
+#main .posts > article {
+  padding: 2.75rem 2rem;
+}
+
+#main .posts > article .image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+#main .posts > article .image img {
+  filter: saturate(1.05) contrast(1.05);
+}
+
+#main .actions.special .button {
+  background: #f59e0b;
+  color: #0f172a;
+}
+
+#main .actions.special .button:hover {
+  background: #d97706;
+}
+
+blockquote {
+  border-left-color: #fbbf24;
+  color: #f8fafc;
+}
+
+a {
+  color: #cbd5e1;
+}
+
+a:hover {
+  color: #f59e0b;
+}
+
+button,
+.button {
+  border-radius: 0.85rem;
+}
+
+#footer {
+  background: transparent;
+  border-top: 1px solid rgba(148, 163, 184, 0.1);
+  color: #94a3b8;
+}
+
+#footer a {
+  color: #cbd5e1;
+}
+
+#footer input,
+#footer textarea {
+  background: rgba(15, 23, 42, 0.9);
+  border-color: rgba(148, 163, 184, 0.15);
+  color: #e2e8f0;
+}
+
+#footer .field label {
+  color: #94a3b8;
+}
+
+#copyright {
+  color: #64748b;
+}
+
+.pagination a,
+.pagination span {
+  border-color: rgba(148, 163, 184, 0.15);
+}
+
+.pagination a {
+  color: #cbd5e1;
+}
+
+.pagination a:hover,
+.pagination a.active {
+  background: #f59e0b;
+  color: #0f172a;
+  border-color: transparent;
+}
