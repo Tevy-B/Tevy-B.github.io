@@ -255,4 +255,11 @@
 
 		}
 
+	function updateCopyrightYear() {
+		var year = new Date().getFullYear();
+		$('#copyright-year').text(year);
+	}
+
+	updateCopyrightYear();
+
 })(jQuery);

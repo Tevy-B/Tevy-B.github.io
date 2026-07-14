@@ -1,0 +1,307 @@
+/* White/Light theme for product management portfolio */
+
+* {
+  background-color: inherit !important;
+}
+
+html, body {
+  background: #ffffff !important;
+  background-image: none !important;
+}
+
+html {
+  background: #ffffff !important;
+}
+
+:root {
+  --bg-1: #ffffff;
+  --bg-2: #ffffff;
+  --text: #0f172a;
+  --heading: #0f172a;
+  --code: #0b1220;
+  --muted: #475569;
+  --muted-2: #64748b;
+  --accent: #f59e0b;
+}
+
+body {
+  background: #ffffff !important;
+  background-image: none !important;
+  color: #0f172a;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Override any template-based backgrounds */
+div, section, article, header, footer, nav, main {
+  background: #ffffff !important;
+}
+
+#wrapper {
+  background: #ffffff !important;
+}
+
+#intro {
+  background: #ffffff;
+  min-height: calc(100vh - 6rem);
+  padding: 6rem 4rem 5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+#intro h1 {
+  color: #0f172a;
+  font-size: 4.75rem;
+  letter-spacing: -0.06em;
+  line-height: 1.05;
+  max-width: 12ch;
+}
+
+#intro p {
+  color: #0f172a;
+  font-size: 1.25rem;
+  max-width: 42rem;
+  margin-bottom: 2rem;
+}
+
+#intro .actions {
+  margin-top: 2.5rem;
+}
+
+#intro .button {
+  background: #f59e0b;
+  color: #0f172a;
+  border: 2px solid #000000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 1rem 2rem;
+  font-weight: 600;
+}
+
+#intro .button:hover {
+  background: #d97706;
+  color: #fff;
+}
+
+#header {
+  background: #ffffff;
+  padding-top: 1rem;
+  border-bottom: 2px solid #000000;
+}
+
+#header .logo {
+  border-color: #f59e0b;
+  border-width: 2px;
+  color: #0f172a;
+  background: #ffffff;
+  border-radius: 2rem;
+  box-shadow: none;
+}
+
+#nav {
+  background: #ffffff;
+  border: 2px solid #000000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  backdrop-filter: none;
+}
+
+#nav ul.links li a {
+  color: #0f172a;
+  border-bottom: 1px solid transparent;
+}
+
+#nav ul.links li.active,
+#nav ul.links li a:hover {
+  background: #fef3c7;
+  border-bottom: 2px solid #000000;
+}
+
+#nav ul.links li.active a {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+#main {
+  width: calc(100% - 4rem);
+  background: transparent;
+  box-shadow: none;
+}
+
+#main > * {
+  background: #ffffff;
+  border-color: #000000;
+  border-width: 2px;
+  border-radius: 2rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+#main > .post {
+  padding: 5rem;
+  border: 2px solid #000000;
+}
+
+#main > .post.featured {
+  background: #ffffff !important;
+  border: 2px solid #f59e0b;
+}
+
+#main h1,
+#main h2,
+#main h3,
+#main h4,
+#main h5,
+#main h6 {
+  color: #0f172a;
+}
+
+#main p,
+#main li,
+#main .date,
+#main pre,
+#main blockquote {
+  color: #0f172a;
+}
+
+#main pre {
+  background: #f9fafb;
+  border-color: #000000;
+  border-width: 1px;
+}
+
+#main pre code {
+  color: #0b1220;
+}
+
+#main .posts > * {
+  background: #ffffff;
+  border-color: #000000;
+  border-width: 2px;
+  border-radius: 1.75rem;
+}
+
+#main .posts > article {
+  padding: 2.75rem 2rem;
+  border: 2px solid #000000;
+}
+
+#main .posts > article:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+#main .posts > article .image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+#main .posts > article .image img {
+  filter: saturate(1) contrast(1);
+}
+
+#main .actions.special .button {
+  background: #f59e0b;
+  color: #0f172a;
+  border: 2px solid #000000;
+  font-weight: 600;
+}
+
+#main .actions.special .button:hover {
+  background: #d97706;
+}
+
+blockquote {
+  border-left-color: #000000;
+  border-left-width: 4px;
+  color: #0f172a;
+  padding-left: 1.5rem;
+}
+
+a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #f59e0b;
+  text-decoration-thickness: 2px;
+}
+
+button,
+.button {
+  border-radius: 0.85rem;
+  border: 2px solid transparent;
+}
+
+button:focus,
+.button:focus {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+#footer {
+  background: #ffffff;
+  border-top: 2px solid #000000;
+  color: #0f172a;
+}
+
+#footer a {
+  color: #0f172a;
+}
+
+#footer input,
+#footer textarea {
+  background: #ffffff;
+  border-color: #000000;
+  border-width: 2px;
+  color: #0f172a;
+}
+
+#footer .field label {
+  color: #475569;
+}
+
+#copyright {
+  background: #ffffff;
+  color: #0f172a;
+  border-top: 2px solid #000000;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.pagination a,
+.pagination span {
+  border-color: #000000;
+  border-width: 2px;
+  padding: 0.5rem 0.75rem;
+  display: inline-block;
+  margin: 0 0.25rem;
+  background: #ffffff;
+  border: 2px solid #000000;
+}
+
+.pagination a {
+  color: #0f172a;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pagination span {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+/* Ensure entire page is white - override all possible background sources */
+html, body, #wrapper, #main, #wrapper > *, body > * {
+  background: #ffffff !important;
+  background-image: none !important;
+  background-color: #ffffff !important;
+}
+
+.pagination a:hover,
+.pagination a.active {
+  background: #f59e0b;
+  color: #000000;
+  border: 2px solid #000000;
+  font-weight: 600;
+}
